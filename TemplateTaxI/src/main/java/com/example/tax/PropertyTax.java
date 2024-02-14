@@ -36,7 +36,7 @@ public class PropertyTax implements Tax{
 
     @Override
     public String getTaxType(){
-        return "PropertyTax";
+        return "property";
     }
 
     @Override

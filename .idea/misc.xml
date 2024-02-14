@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/basics/pom.xml" />
         <option value="$PROJECT_DIR$/TemplateTaxI/pom.xml" />
+        <option value="$PROJECT_DIR$/01-Basics/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

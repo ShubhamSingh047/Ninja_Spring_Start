@@ -27,12 +27,12 @@ public class IncomeTax implements Tax {
 
     @Override
     public double getTaxAmount() {
-        return taxableAmount;
+        return taxAmount;
     }
 
     @Override
     public String getTaxType() {
-        return "Income";
+        return "income";
     }
 
     @Override
@@ -48,18 +48,19 @@ public class IncomeTax implements Tax {
 
     @Override
     public void calculateTaxAmount() {
-        if(taxableAmount<=3){
-            taxAmount=taxableAmount*0;
-        }else if(taxableAmount>3 && taxableAmount<=6){
-            taxAmount=taxableAmount*0.05;
-        }else if(taxableAmount>6 && taxableAmount<=9){
-            taxAmount=taxableAmount*0.1;
-        }else if(taxableAmount>9 && taxableAmount<=12){
-            taxAmount=taxableAmount*0.15;
-        }else if(taxableAmount>12 && taxableAmount<=15){
-            taxAmount=taxableAmount*0.2;
-        }else{
-            taxAmount=taxableAmount*0.3;
+        if(taxableAmount <= 300000){
+            taxAmount = 0;
+        } else if (taxableAmount <= 600000) {
+            taxAmount = 0.05 * taxableAmount;
+        } else if (taxableAmount <= 900000) {
+            taxAmount = 0.1 * taxableAmount;
+        } else if (taxableAmount <= 1200000) {
+            taxAmount = 0.15 * taxableAmount;
+        } else if (taxableAmount <= 1500000) {
+            taxAmount = 0.2 * taxableAmount;
+        }
+        else{
+            taxAmount = 0.3 * taxableAmount;
         }
     }
 }
