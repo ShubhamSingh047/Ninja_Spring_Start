@@ -2,6 +2,7 @@ package com.example.SpringNinja.basics;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Scanner;
 
@@ -16,8 +17,14 @@ public class BasicsApplication {
 		int size=s.nextInt();
 
 		//careating manually object for spring
-		Longtable lt= new Longtable();
-		ShortTable st= new ShortTable();
+//		Longtable lt= new Longtable();
+//		ShortTable st= new ShortTable();
+
+		//creating object(beans) using spring ioc
+		ClassPathXmlApplicationContext context= new ClassPathXmlApplicationContext("applicationContext.xml");
+
+		Table lt=  (Table)context.getBean("longTable");
+		Table st=  (Table)context.getBean("shortTable");
 
 		if(size==1){
 			System.out.println(st.showDetails());
