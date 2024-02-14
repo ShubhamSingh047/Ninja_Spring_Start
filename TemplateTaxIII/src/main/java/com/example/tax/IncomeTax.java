@@ -1,5 +1,7 @@
 package com.example.tax;
 
+import java.util.Scanner;
+
 public class IncomeTax implements Tax {
     double taxAmount;
     double taxableAmount;
@@ -49,7 +51,7 @@ public class IncomeTax implements Tax {
 
     @Override
     public void payTax() {
-        System.out.println("Hi, your income tax is paid");
-        isTaxPayed = true;
+       isTaxPayed=true;
+        System.out.println("Hi, your income tax is paid !");
     }
 }
