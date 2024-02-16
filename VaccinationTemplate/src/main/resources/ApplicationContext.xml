@@ -38,50 +38,62 @@
 
 <!-- Covid-->
     <bean id="fatherCovid" class="com.example.Vaccination.Father">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Covid" />
     </bean>
     <bean id="motherCovid" class="com.example.Vaccination.Mother">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Covid" />
     </bean>
     <bean id="spouseCovid" class="com.example.Vaccination.Spouse">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Covid" />
     </bean>
 
     <bean id="selfCovid" class="com.example.Vaccination.Self">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Covid" />
     </bean>
 
 <!--    Polio-->
     <bean id="fatherPolio" class="com.example.Vaccination.Father">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Polio" />
     </bean>
     <bean id="motherPolio" class="com.example.Vaccination.Mother">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Polio" />
     </bean>
     <bean id="spousePolio" class="com.example.Vaccination.Spouse">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Polio" />
     </bean>
 
     <bean id="selfPolio" class="com.example.Vaccination.Self">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Polio" />
     </bean>
 
 <!--    Typhoid-->
     <bean id="fatherTyphoid" class="com.example.Vaccination.Father">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Typhoid" />
     </bean>
     <bean id="motherTyphoid" class="com.example.Vaccination.Mother">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Typhoid" />
     </bean>
     <bean id="spouseTyphoid" class="com.example.Vaccination.Spouse">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Typhoid" />
     </bean>
 
     <bean id="selfTyphoid" class="com.example.Vaccination.Self">
-
+        <constructor-arg ref="timeAndLocation" />
+        <constructor-arg ref="Typhoid" />
     </bean>
 
 <!--    timeandLocation-->
-    <bean id="timeAndLocation" class="com.example.Vaccination.TimeAndLocation" />
+    <bean id="timeAndLocation" class="com.example.Vaccination.TimeAndLocation"></bean>
 
 </beans>

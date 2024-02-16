@@ -92,7 +92,6 @@ public class VaccinationApplication {
                String location = s.nextLine();
                timeAndLocation.setDetails(time, date, location);
                user.setUserDetails(name, age, timeAndLocation);
-               System.out.println("Hello " + name + " your appointment has been fixed for " + vaccines.getType() + " on " + timeAndLocation.getDetails());
                user.setAppointment();
 
            }
