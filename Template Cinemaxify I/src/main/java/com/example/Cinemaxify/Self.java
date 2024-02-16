@@ -19,7 +19,7 @@ public class Self implements User{
 
     @Override
     public void getUserDetails() {
-        System.out.println("Hello "+name+" you have entered the following details for "+memberName+"\n age: "+age+
-                "\n contact: "+contact+"\n address: "+address);
+        System.out.println("Hello "+name+" you have entered the following details for "+memberName+"\nage: "+age+
+                "\ncontact: "+contact+"\naddress: "+address);
     }
 }
