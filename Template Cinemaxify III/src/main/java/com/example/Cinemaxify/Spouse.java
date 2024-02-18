@@ -11,6 +11,11 @@ public class Spouse implements User{
 
     // Add setPlan(Plan plan) method which sets plan attribute:
 
+
+    public void setPlan(Plan plan) {
+        this.plan = plan;
+    }
+
     @Override
     public void setUserDetails(String name, int age, Long contact, String address) {
         this.name = name;
