@@ -17,7 +17,6 @@ public class SocialMediaApplication {
 		PostList postList=(PostList) context.getBean("simplePostList");
 		System.out.println("Social Media Application Started !");
 		for(;true;) {
-
 			System.out.println("1)Make new Post \n2)Show All Post \n3)Exit");
 			int choice = s.nextInt();
 			switch (choice){
@@ -31,7 +30,6 @@ public class SocialMediaApplication {
 					break;
 				case 2:
 //					------------this case is not working---------------
-
 					System.out.println("size of arrayList "+postList.size());
 					for(int i=0; i< postList.size(); i++){
 						System.out.println(i+") "+postList.getPost(i).getPost());

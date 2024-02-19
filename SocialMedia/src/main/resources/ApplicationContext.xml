@@ -4,12 +4,13 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="simplePost" class="com.example.SocailMedia.SocialMedia.SimplePost" scope="singleton">
 
+    <bean id="simplePost" class="com.example.SocailMedia.SocialMedia.SimplePost" scope="prototype">
+<!--        <property name="post" ref="simplePost" />-->
     </bean>
 
-    <bean id="simplePostList" class="com.example.SocailMedia.SocialMedia.SimplePostList" scope="prototype">
-
+    <bean id="simplePostList" class="com.example.SocailMedia.SocialMedia.SimplePostList">
+<!--        <property name="postList" ref="simplePostList" />-->
     </bean>
 
 </beans>
