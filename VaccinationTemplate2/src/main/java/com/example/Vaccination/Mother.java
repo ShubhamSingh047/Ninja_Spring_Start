@@ -62,6 +62,7 @@ public class Mother implements User {
     @Override
     public void setAppointment() {
         isVaccinated=true;
+        System.out.println("Hello " + name + " your appointment has been fixed for " + vaccine.getType() + " on " + timeAndLocation.getDetails());
     }
 
     @Override
